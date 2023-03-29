@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+@font-face {
+    font-family: "Gulroy";
+    src: local("GulroyRegular"),
+         url("fonts/Gilroy-Regular.woff2") format("woff2"),
+         url("fonts/Gilroy-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Gulroy";
+    src: local("GulroyMedium"),
+         url("fonts/Gilroy-Medium.woff2") format("woff2"),
+         url("fonts/Gilroy-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Gulroy";
+    src: local("GulroyBold"),
+         url("fonts/Gilroy-Bold.woff2") format("woff2"),
+         url("fonts/Gilroy-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;}
+
+body{
+    margin: 0 auto;
+    max-width: 1445px;
+    font-family: "Gulroy", sans-serif;
+    background-color: #FFFFFF;
+    border: 1px solid #413e3e;
+}
+a{ 
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    list-style-type:none;
+   }
+.header{
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.container{
+    max-width: 942px;
+    margin: 0 auto; 
+    }
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 33px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #828282;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.menuItem{
+    line-height: 22px;
+    color: #828282;
+    font-size: 18px;
+}
+.menuItem:hover{
+    line-height: 22px;
+    color: #070707;
+    font-size: 18px;
+    transition: 0.3s;
+}
+.menuItem:focus{
+    border: 1px solid #948f8f;    
+}
+.menuItem:active{
+    color: #000000;
+    border: none;
+    border-bottom: 2px solid #948f8f;
+    transition: 0.3s;
+}
+
+.hero .container{
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 430px;
+    margin-bottom: 105px;
+    background-image: url(img/MainPhoto.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 160px;
+}
+.heroTitle{
+    max-width: 124px;
+}
+.title{
+    line-height: 59px;
+    color: #070707;
+    font-size: 47.3392px;
+}
+.heroDescription{
+    max-width: 156px;
+    align-self: self-end;
+    line-height: 22px;
+    color: #070707;
+    font-size: 18px;
+}
+.language{
+    transform: rotate(-90deg);
+    align-self: center;
+}
+.heroLanguage{
+    line-height: 20px;
+    color: #828282;
+    font-size: 16px;
+}
+.heroLanguage:hover{
+    line-height: 16px;
+    color: #070707;
+    transition: 0.3s;
+    font-size: 16px;
+}
+.heroLanguage:focus{
+    border: 1px solid #948f8f;    
+}
+.heroLanguage:active{
+    color: #000000;
+    border: none;
+    border-bottom: 2px solid #948f8f;
+}
+.aboutMe{
+    background-color:#F6F6F6;
+}
+.containerTitle{
+    padding-top: 121px;
+    margin-bottom: 18px;
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;   
+    color: #070707;
+}
+.aboutMeDescription{
+    margin: 0 auto;
+    padding-bottom: 107px;
+    max-width: 486px;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #070707;
+}
+.skills .container{
+    padding-bottom: 110px;
+}
+
+.skills .containerTitle{
+    padding-top: 121px;
+    margin-bottom: 69px;
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;   
+    color: #070707;
+}
+.skillsList{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skillsPrograms{
+    margin-bottom: 83px;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #070707;
+}
+.skillsItem{
+    width: 160px;
+    display: block;
+    margin: 0 auto;
+}
+.itemIcon{
+    padding-left: 39px;
+    margin-bottom: 28px;
+}
+.program{   
+    margin-bottom: 41px;
+    font-size: 14px;
+    line-height: 17px;
+    text-align:center;
+    color: #828282;
+}
+.stars{
+    display: flex;
+    justify-content: space-between
+}
+
+.portfolio{
+    background-color:#F6F6F6;
+}
+.portfolio .containerTitle{
+    margin-bottom: 47px;    
+
+}
+.portfolioImg{
+    margin-bottom: 45px;
+}
+.portfolioLink{
+    display: block;
+    margin-bottom: 99px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    /* text-decoration-line: underline; */
+    color: #070707;
+}
+
+.portfolioLink:hover{
+    line-height: 22px;
+    color:#948f8f;
+    font-size: 18px;
+    transition: 0.3s;
+}
+.portfolioLink:focus{
+    text-decoration-line: underline;
+
+    /* border: 1px solid #948f8f;     */
+}
+.portfolioLink:active{
+    color: #000000;
+    border: none;
+    text-decoration-line: underline;
+    transition: 0.3s;
+
+    /* border-bottom: 2px solid #948f8f; */
+}
+
+.last{
+    padding-bottom: 96px;
+}
+.contacts{
+    padding-bottom: 124px;
+}
+.contacts .containerTitle{
+    padding-top: 0px;
+    margin-bottom: 20px;
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;   
+    color: #070707;
+}
+.contactsWelcome{
+    margin-bottom: 20px;
+    line-height: 22px;
+    text-align: center;
+    font-size: 18px;
+    color: #070707;
+}
+.contactsBtn{
+    padding: 13px 30px;
+    background: #070707;
+    border-radius: 20px;
+    display: block;
+    width: 190px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 86px;
+}
+.contactsBtn:hover{
+    line-height: 22px;
+    color: #070707;
+    background: #948f8f;
+    font-size: 18px;
+    transition: 0.3s;
+}
+.contactsBtn:focus{
+    border: 1px solid #948f8f;    
+}
+.contactsBtn:active{
+    color: #ffffff;
+    border: none;
+    border-bottom: 2px solid #000000;
+}
+
+.contactsList{
+    display: flex;
+    justify-content: space-between;
+    max-width: 343px;
+    margin: 0 auto;
+    margin-bottom: 46px;
+}
+
+
+/* .contactsItem:hover{
+    background: #d3d3d3;
+    border-radius: 20%;
+    transition: 0.3s;
+}
+.contactsItem:focus{
+    border: 1px solid #948f8f;    
+}
+.contactsItem:active{
+    width: 90%;
+    height: 90%;
+    color: #ffffff;
+    border: none;
+} */
+
+
+
+
+.contactsCallToActionTap:hover{
+    line-height: 14px;
+    color: #070707;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.contactsCallToActionTap:focus{
+    transition: 0.3s;
+    border: 1px solid #948f8f;    
+}
+.contactsCallToActionTap:active{
+    color: #000000;
+    transition: 0.3s;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+
+.contactsCallToAction{
+    text-align: center;
+    line-height: 17px;
+    color: #828282;
+    font-size: 14px;
+}
